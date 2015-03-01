@@ -903,3 +903,10 @@ var Zepto = (function() {
 // If `$` is not yet defined, point it to `Zepto`
 window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
+
+// support CMD
+if (typeof define === 'function' && define.cmd)
+  define(function(require, exports, module) {
+    module.exports = Zepto
+  })
+

@@ -1,4 +1,5 @@
 .DS_Store
+.idea
 dist/
 dist/zepto.min.js
 dist/zepto.js
